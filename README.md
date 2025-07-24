@@ -34,3 +34,5 @@ Created by **Sri Harsha Navundru** —
 I'm an aspiring prompt engineer focused on structured thinking, decision systems, and solving real-world problems through practical AI workflows.
 
 > I’m building this repo as a lifelong toolkit — and I’m excited to learn, iterate, and grow under the mentorship of world-class teams solving meaningful problems with AI.
+
+Interested in these prompts? DM me on X @nsriharsha333 or email me nsriharsha333@gmail.com!
