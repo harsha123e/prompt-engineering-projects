@@ -6,16 +6,16 @@
   "priority_order": ["international", "india_mainstream"],
   "roles": [
     {
-      "title": "Manual Tester",
-      "keywords": ["\"manual testing\" AND remote", "\"test cases\" AND QA", "\"bug reports\" AND remote"]
+      "title": "Prompt Engineer",
+      "keywords": ["prompt engineering", "LLM prompts", "chatbot prompt design", "GPT prompt optimization", "prompt tuning"]
     },
     {
-      "title": "Test Engineer",
-      "keywords": ["\"functional testing\" AND remote", "\"test plans\" AND QA", "\"automation testing\" AND WFH"]
+      "title": "AI Prompt Specialist",
+      "keywords": ["AI prompt specialist", "prompt design", "AI language models", "NLP prompts", "text generation prompts"]
     },
     {
-      "title": "Quality Assurance",
-      "keywords": ["\"quality assurance\" AND remote", "\"QA analyst\" AND remote", "\"defect tracking\" AND QA"]
+      "title": "Conversational Designer",
+      "keywords": ["conversational design", "dialogue writing", "chatbot flows", "LLM interactions", "UX writing for AI"]
     }
   ],
   "filters": {
@@ -30,11 +30,12 @@
   },
   "sources": {
     "international_sources": [
-      "site:lever.co",
-      "site:boards.greenhouse.io",
-      "Wellfound (filter last 7 days)",
-      "YCombinator Jobs",
-      "RemoteOK (fallback only)"
+      "RemoteOK",
+      "WeWorkRemotely",
+      "Wellfound",
+      "YCombinator Startup Jobs",
+      "Remotive.io",
+      "Startup.jobs"
     ],
     "india_mainstream_sources": [
       "LinkedIn India (Remote)",
@@ -49,17 +50,11 @@
   "fallback_strategy": {
     "use_india_mainstream_if_international_under": 10,
     "expand_keywords_if_under": 5,
-    "expanded_keywords": [
-      "\"QA analyst\" AND remote",
-      "\"software tester\" AND WFH",
-      "\"manual QA\" AND \"work from home\"",
-      "\"test specialist\" AND remote",
-      "\"software quality\" AND remote"
-    ]
+    "expanded_keywords": ["NLP engineer", "AI content designer", "LLM specialist", "chatbot developer"]
   },
   "output": {
     "format": "markdown",
-    "template": "### 🌐 Remote Testing/QA Jobs (Run {run_id} | {results_count} found on {date_generated})\n\n{listings}\n\nApply quickly. Prioritize top 3 matches based on salary and posting date.",
+    "template": "### 🧠 Remote Prompt Engineering Jobs (Run {run_id} | {results_count} found on {date_generated})\n\n{listings}\n\n**Apply quickly. Prioritize top 3 matches based on salary and posting date.**",
     "fields": [
       "job_title",
       "company_name",
@@ -71,7 +66,7 @@
       "apply_url",
       "source"
     ],
-    "listing_format": "{job_title} {salary_estimate_tag}\n- Company: {company_name}\n- Location: {location}\n- Remote: {remote_status}\n- Type: {job_type}\n- Salary: {salary_estimate}\n- Posted: {posted_date}\n- Apply: {apply_url}\n- Source: {source}\n"
+    "listing_format": "**{job_title}** {salary_estimate_tag}\n- **Company:** {company_name}\n- **Location:** {location}\n- **Remote:** {remote_status}\n- **Type:** {job_type}\n- **Salary:** {salary_estimate}\n- **Posted:** {posted_date}\n- **Apply:** {apply_url}\n- **Source:** {source}\n"
   },
   "meta": {
     "generate_summary": true,
@@ -85,7 +80,7 @@
     },
     "tag_logic": {
       "salary_estimate_tag": {
-        "if_above": "₹600000/year or $7500/year",
+        "if_above": "₹1200000/year or $15000/year",
         "then_tag": "💰 High Paying",
         "else": ""
       }
