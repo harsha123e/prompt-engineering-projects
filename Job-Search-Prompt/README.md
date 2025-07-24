@@ -1,5 +1,8 @@
 # Job Search Prompt 🔍
 
+⚠️ Disclaimer: This prompt only fetches publicly available job listings. Platforms requiring login or dynamic content (like LinkedIn) may not be fully supported.
+Treat this as a discovery aid, not a complete job board replacement.
+
 A structured AI prompt system that automates your job search by curating remote job listings tailored to your skills, preferences, and keywords — saving hours of manual work across job boards.
 
 ## 🎯 What It Does
