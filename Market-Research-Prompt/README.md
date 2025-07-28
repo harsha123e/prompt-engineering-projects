@@ -36,7 +36,7 @@ You get:
 
 ## ⚙️ Files
 
-- `prompt.json`: The full structured prompt (works with ChatGPT, Grok, Claude, or any advanced LLM).
+- `prompt.txt`: The full structured prompt (works with ChatGPT, Grok, Claude, or any advanced LLM).
 - `README.md`: You’re reading it.
 
 ## 💡 How It Works
